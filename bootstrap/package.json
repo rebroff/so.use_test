@@ -1,0 +1,84 @@
+{
+	"name": "test_so_use",
+	"version": "0.0.1",
+	"description": "",
+	"main": "gulpfile.babel.js",
+	"author": "",
+	"scripts": {
+		"dev": "gulp",
+		"build": "gulp build --production"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.18.x",
+		"@babel/core": "^7.18.x",
+		"@babel/preset-env": "^7.18.x",
+		"@babel/register": "^7.18.x",
+		"babelify": "^10.0.x",
+		"browser-sync": "^2.26.x",
+		"browserify": "^17.0.x",
+		"core-js": "^2.6.x",
+		"eslint": "^8.40.0",
+		"eslint-config-airbnb-base": "^15.0.x",
+		"eslint-config-prettier": "^8.5.x",
+		"eslint-plugin-prettier": "^4.2.x",
+		"eslint-plugin-unicorn": "^45.0.x",
+		"esmify": "^2.1.x",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^6.0.x",
+		"gulp-babel": "^8.0.x",
+		"gulp-cached": "^1.1.1",
+		"gulp-cheerio": "^0.6.x",
+		"gulp-cli": "^2.0.x",
+		"gulp-csscomb": "^0.1.0",
+		"gulp-dependents": "^1.2.5",
+		"gulp-file-include": "^2.3.0",
+		"gulp-filter": "^6.0.0",
+		"gulp-format-html": "^1.5.2",
+		"gulp-group-css-media-queries": "^1.2.x",
+		"gulp-if": "^3.0.0",
+		"gulp-imagemin": "^7.0.0",
+		"gulp-insert": "^0.5.0",
+		"gulp-load-plugins": "^2.0.8",
+		"gulp-minify-css": "^1.2.x",
+		"gulp-mode": "^1.1.0",
+		"gulp-plumber": "^1.2.x",
+		"gulp-remove-empty-lines": "^0.1.0",
+		"gulp-rename": "^1.4.0",
+		"gulp-replace": "^1.0.x",
+		"gulp-sass": "^5.1.x",
+		"gulp-size": "^4.0.1",
+		"gulp-sourcemaps": "^2.6.x",
+		"gulp-terser": "^2.1.x",
+		"prettier": "^2.7.x",
+		"rimraf": "^2.6.x",
+		"sass": "^1.56.x",
+		"stylelint": "^14.16.1",
+		"stylelint-config-clean-order": "^5.0.1",
+		"stylelint-config-prettier": "^9.0.5",
+		"stylelint-config-standard": "^29.0.x",
+		"stylelint-config-standard-scss": "^6.1.x",
+		"stylelint-prettier": "^3.0.0",
+		"vinyl-buffer": "^1.0.x",
+		"vinyl-source-stream": "^2.0.x"
+	},
+	"dependencies": {
+		"bootstrap": "^5.3.3"
+	},
+	"babel": {
+		"presets": [
+			"@babel/preset-env"
+		]
+	},
+	"browserify": {
+		"transform": [
+			[
+				"babelify",
+				{
+					"presets": [
+						"@babel/preset-env"
+					]
+				}
+			]
+		]
+	}
+}

@@ -1,0 +1,26 @@
+.masked-image {
+  width: 250px;
+  height: 250px;
+  -webkit-mask-image: url('../images/pentagon.svg');
+  mask-image: url('../images/pentagon.svg');
+  max-width: 100%;
+  mask-size: 100%;
+  mask-repeat: no-repeat;
+}
+
+.masked-image__image {
+  width: 100%;
+  transition: transform .25s;
+}
+
+@media screen and (hover: hover) and (pointer: fine) {
+  .masked-image:hover .masked-image__image {
+    transform: scale(1.4);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .masked-image {
+    height: auto;
+  }
+}

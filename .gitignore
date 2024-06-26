@@ -1,0 +1,14 @@
+node_modules
+.idea
+design
+.DS_Store
+._*
+package-lock.json
+.eslintrc.json
+.stylelintrc.json
+.sass-cache
+Thumbs.db
+*.zip
+*.rar
+*.7z
+.vscode
