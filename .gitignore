@@ -13,4 +13,4 @@ Thumbs.db
 *.7z
 .vscode
 .gitignore
-dist
+*/dist
